@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root {
+  --main-font: 'Jura', sans-serif;
+  --secondary-font: 'Quicksand', sans-serif;
+}
+
+.App {
+  font-family: var(--main-font);
+}
+
+.pseudo-logo, .jumbo-brand {
+    font-weight: 700;
+}
+
+.pseudo-logo, .nav-link:hover {
+    text-shadow: 1px -1px 6px #45f193;
+}
+
+#mp-footer {
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+#main-jumbo {
+    background: rgb(52,58,64);
+    background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(76,85,92,1) 25%, rgba(211,211,211,1) 100%);
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.product-card {
+    transition: transform .3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    animation: boxshadowblur .3s ease forwards;
+}
+
+@keyframes boxshadowblur {
+    from {
+        box-shadow: 0px 0px 0px #ffffff;
+    }
+    to {
+        box-shadow: 4px 4px 50px #ffffff;
+    }
+}
