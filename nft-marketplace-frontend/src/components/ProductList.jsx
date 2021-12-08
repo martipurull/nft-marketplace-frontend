@@ -14,7 +14,7 @@ const ProductList = () => {
                 const loadedProducts = await response.json()
                 setProducts(loadedProducts)
             } else {
-                throw new Error("Failed to fetch!")
+                throw new Error("Failed to fetch!!!!")
             }
         } catch (error) {
             console.log(error)
