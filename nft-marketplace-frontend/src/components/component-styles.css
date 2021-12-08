@@ -27,7 +27,7 @@
 }
 
 .product-img {
-    max-width: 100%;
+    max-width: 400px;
     height: 225px;
     object-fit: cover;
 }
@@ -48,4 +48,25 @@
     to {
         box-shadow: 4px 4px 50px #ffffff;
     }
+}
+
+.price-badge {
+    padding: 12px 6px;
+    background-color: #45f193;
+    color: black;
+}
+
+.make-pdf-btn {
+    background: rgb(52,58,64);
+    background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(76,85,92,1) 25%, rgba(211,211,211,1) 100%);
+    border: none;
+}
+
+.details-btn {
+    background-color: rgb(20, 131, 235);
+    border: none;
+}
+
+.make-pdf-btn:hover {
+    font-size: large;
 }
