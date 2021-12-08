@@ -1,10 +1,11 @@
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Badge from 'react-bootstrap/Badge'
+import imageToBase64 from 'image-to-base64'
+import { useEffect, useState } from 'react'
 
 
 const ProductSingle = ({ productInfo }) => {
-
     return (
         <Card className="h-100 product-card">
             <Card.Img className="product-img" variant="top" src={productInfo.imageUrl} />
