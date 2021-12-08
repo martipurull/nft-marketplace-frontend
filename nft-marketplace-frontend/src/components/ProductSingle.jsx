@@ -5,15 +5,6 @@ import Badge from 'react-bootstrap/Badge'
 
 const ProductSingle = ({ productInfo }) => {
 
-    const downloadPDF = async () => {
-        try {
-            const response = await fetch(`${ process.env.REACT_APP_URL }/products/${ productInfo.id }/downloadPDF`)
-        } catch (error) {
-            console.log(error)
-            throw new Error(error)
-        }
-    }
-
     return (
         <Card className="h-100 product-card">
             <Card.Img className="product-img" variant="top" src={productInfo.imageUrl} />
@@ -27,7 +18,7 @@ const ProductSingle = ({ productInfo }) => {
             <div className="d-flex justify-content-between align-items-end mb-3 mx-4">
                 <Badge className="price-badge" variant="success">from ${productInfo.price}</Badge>
                 <Button className="details-btn" variant="primary">details</Button>
-                <Button className="make-pdf-btn" variant="secondary" onClick={downloadPDF()}>pdf</Button>
+                <Button className="make-pdf-btn" variant="secondary" onClick={() => window.open(`${ process.env.REACT_APP_URL }/products/${ productInfo.id }/downloadPDF`, "_blank")}>pdf</Button>
             </div>
         </Card>
     )
