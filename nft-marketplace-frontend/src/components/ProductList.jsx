@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import ProductSingle from './ProductSingle'
 
 
-const ProductList = () => {
+const ProductList = ({ backoffice }) => {
     const [products, setProducts] = useState([])
 
     const fetchProducts = async () => {
@@ -28,8 +28,8 @@ const ProductList = () => {
         <Row>
             {
                 products.map(products => (
-                    <Col>
-                        <ProductSingle key={products.id} productInfo={products} />
+                    <Col xs={6} md={4} lg={3} className="my-3">
+                        <ProductSingle key={products.id} productInfo={products} backoffice={backoffice} />
                     </Col>
                 ))
             }

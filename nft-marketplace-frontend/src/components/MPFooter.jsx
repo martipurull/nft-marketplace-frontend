@@ -4,7 +4,7 @@ import { Facebook, Instagram, Whatsapp, Twitter, Youtube } from 'react-bootstrap
 const MPFooter = () => {
 
     return (
-        <div id="mp-footer" className="d-flex bg-dark text-light fixed-bottom pt-4 pb-3">
+        <div id="mp-footer" className="d-flex bg-dark text-light pt-4 pb-3 mt-3 fixed-bottom">
             <div>
                 <Facebook size={20} className="mr-3" />
                 <Instagram size={20} className="mr-3" />

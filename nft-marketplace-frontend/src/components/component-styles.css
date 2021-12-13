@@ -70,3 +70,7 @@
 .make-pdf-btn:hover {
     font-size: large;
 }
+
+.edit-btn {
+    font-weight: 800;
+}
