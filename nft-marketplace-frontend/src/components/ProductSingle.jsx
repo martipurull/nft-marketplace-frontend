@@ -10,7 +10,7 @@ const ProductSingle = ({ productInfo, backoffice }) => {
     return (
         <>
             <Card className="h-100 product-card">
-                {isBackoffice && <Link to={`product-form/${ productInfo.id }`} ><Button variant="warning" className="w-100 edit-btn" >EDIT PRODUCT</Button></Link>}
+                {isBackoffice && <Link to={`/product-form/${ productInfo.id }`} ><Button variant="warning" className="w-100 edit-btn" >EDIT PRODUCT</Button></Link>}
                 <Card.Img className="product-img" variant="top" src={productInfo.imageUrl} />
                 <Card.Body>
                     <Card.Title>{productInfo.name}</Card.Title>

@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MarketPlaceMain />} />
             <Route path="/backoffice" element={<BackOfficeMain />} />
-            <Route path="/product-form" element={<ProductForm />} />
+            <Route path="/product-form/:productId" element={<ProductForm />} />
           </Routes>
         </div>
         <MPFooter />
